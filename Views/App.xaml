@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookStoreApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Colors -->
+            <Color x:Key="PrimaryColor">#4CAF50</Color>
+            <Color x:Key="SecondaryColor">#FF9800</Color>
+            <Color x:Key="TextPrimaryColor">#212121</Color>
+            <Color x:Key="TextSecondaryColor">#757575</Color>
+            <Color x:Key="BackgroundColor">#F5F5F5</Color>
+
+            <!-- Global Styles -->
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColor}"/>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="Padding" Value="15,10"/>
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

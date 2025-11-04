@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Android", "BookStoreApp\BookStoreApp.Android\App.Android.csproj", "{40B775D2-982A-4A3D-910B-D2918D771C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.iOS", "BookStoreApp\BookStoreApp.iOS\App.iOS.csproj", "{EDA891D3-AFCA-41CB-A6AA-4D02FFD430AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "BookStoreApp\BookStoreApp\App.csproj", "{D75DFFF9-7AF4-47D9-BC0B-03DF901EABE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40B775D2-982A-4A3D-910B-D2918D771C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B775D2-982A-4A3D-910B-D2918D771C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B775D2-982A-4A3D-910B-D2918D771C6F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{40B775D2-982A-4A3D-910B-D2918D771C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B775D2-982A-4A3D-910B-D2918D771C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B775D2-982A-4A3D-910B-D2918D771C6F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EDA891D3-AFCA-41CB-A6AA-4D02FFD430AE}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{EDA891D3-AFCA-41CB-A6AA-4D02FFD430AE}.Debug|Any CPU.Build.0 = Debug|iPhone
+		{EDA891D3-AFCA-41CB-A6AA-4D02FFD430AE}.Debug|Any CPU.Deploy.0 = Debug|iPhone
+		{EDA891D3-AFCA-41CB-A6AA-4D02FFD430AE}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{EDA891D3-AFCA-41CB-A6AA-4D02FFD430AE}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{EDA891D3-AFCA-41CB-A6AA-4D02FFD430AE}.Release|Any CPU.Deploy.0 = Release|iPhoneSimulator
+		{D75DFFF9-7AF4-47D9-BC0B-03DF901EABE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75DFFF9-7AF4-47D9-BC0B-03DF901EABE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75DFFF9-7AF4-47D9-BC0B-03DF901EABE6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D75DFFF9-7AF4-47D9-BC0B-03DF901EABE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75DFFF9-7AF4-47D9-BC0B-03DF901EABE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D75DFFF9-7AF4-47D9-BC0B-03DF901EABE6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EEE1C81-8B89-4BA4-9609-51A12353DB61}
+	EndGlobalSection
+EndGlobal

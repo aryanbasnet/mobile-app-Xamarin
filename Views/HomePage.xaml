@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BookStoreApp.ViewModels"
+             x:Class="BookStoreApp.Views.HomePage"
+             x:Name="ThisPage"
+             Title="ShopEasy">
+
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="CartToolbarItem" Text="Cart (0)" Order="Primary" Priority="0" Clicked="OnCartClicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CategoryButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#4CAF50"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="Padding" Value="15,10"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+            
+            <Style x:Key="ProductCardStyle" TargetType="Frame">
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="HasShadow" Value="True"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="Margin" Value="8"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="15">
+            <!-- Search Bar -->
+            <Frame BackgroundColor="#f5f5f5" Padding="5" CornerRadius="25">
+                <SearchBar Placeholder="Search products..." 
+                          PlaceholderColor="#666"
+                          BackgroundColor="Transparent"/>
+            </Frame>
+
+            <!-- Categories -->
+            <Label Text="Categories" 
+                   FontSize="Large" 
+                   FontAttributes="Bold" 
+                   Margin="0,15,0,10"/>
+            
+            <ScrollView Orientation="Horizontal" Margin="0,0,0,15">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Electronics" Style="{StaticResource CategoryButtonStyle}"/>
+                    <Button Text="Fashion" Style="{StaticResource CategoryButtonStyle}"/>
+                    <Button Text="Home" Style="{StaticResource CategoryButtonStyle}"/>
+                    <Button Text="Beauty" Style="{StaticResource CategoryButtonStyle}"/>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Featured Products -->
+            <Label Text="Featured Products" 
+                   FontSize="Large" 
+                   FontAttributes="Bold" 
+                   Margin="0,0,0,10"/>
+
+            <CollectionView ItemsSource="{Binding Featured}" HeightRequest="280">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Style="{StaticResource ProductCardStyle}" WidthRequest="180">
+                            <StackLayout>
+                                <Image HeightRequest="120" 
+                                       Aspect="AspectFill"
+                                       Source="{Binding ImageUrl}"/>
+                                <Label Text="{Binding Name}" 
+                                       FontAttributes="Bold"
+                                       Margin="0,5"/>
+                                <Label Text="{Binding Price, StringFormat='${0:F2}'}" 
+                                       TextColor="#4CAF50"/>
+                                <Button Text="View" 
+                                        BackgroundColor="#4CAF50"
+                                        TextColor="White"
+                                        CornerRadius="15"
+                                        HeightRequest="35"
+                                        Clicked="OnViewClicked"
+                                        CommandParameter="{Binding .}"/>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Special Offers -->
+            <Label Text="Special Offers" 
+                   FontSize="Large" 
+                   FontAttributes="Bold" 
+                   Margin="0,15,0,10"/>
+
+            <Frame BackgroundColor="#FFE0B2" 
+                   CornerRadius="15" 
+                   Padding="15" 
+                   Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0">
+                        <Label Text="Summer Sale!" 
+                               FontSize="22" 
+                               FontAttributes="Bold"/>
+                        <Label Text="Get up to 50% off" 
+                               FontSize="16"/>
+                    </StackLayout>
+                    <Button Text="Shop Now" 
+                            Grid.Column="1" 
+                            BackgroundColor="#FF9800"
+                            TextColor="White"
+                            CornerRadius="20"
+                            Padding="15,5"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

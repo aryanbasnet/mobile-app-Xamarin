@@ -1,0 +1,17 @@
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\BookStoreApp.csproj.AssemblyReference.cache
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\BookStoreApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\Views\App.xaml.g.cs
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\Views\BooksPage.xaml.g.cs
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\Views\Mainpage.xaml.g.cs
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\BookStoreApp.AssemblyInfoInputs.cache
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\BookStoreApp.AssemblyInfo.cs
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\BookStoreApp.csproj.CoreCompileInputs.cache
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\bin\Debug\netstandard2.0\BookStoreApp.deps.json
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\bin\Debug\netstandard2.0\BookStoreApp.dll
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\bin\Debug\netstandard2.0\ref\BookStoreApp.dll
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\bin\Debug\netstandard2.0\BookStoreApp.pdb
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\BookStoreApp.dll
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\refint\BookStoreApp.dll
+C:\Users\Roshan\source\repos\BookStoreApp\BookStoreApp\BookStoreApp\obj\Debug\netstandard2.0\BookStoreApp.pdb
